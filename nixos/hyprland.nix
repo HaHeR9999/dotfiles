@@ -72,6 +72,9 @@
         "$mod, mouse:272, movewindow"
 	"$mod, mouse:273, resizewindow"
       ];
+      monitor = [
+        "eDP-1,1920x1080@60,0x0,1"
+      ];
       windowrule = [
         "pin, ^(polkit-gnome-authentication-agent-1)$"
 	"opacity 0.99 override 0.99 override, title:^(MainPicker)$"
@@ -146,6 +149,9 @@
         shadow_range = 4;
         shadow_render_power = 3;
         "col.shadow" = "rgba(1a1a1aee)";
+      };
+      xwayland = {
+        force_zero_scaling = true;
       };
       animations = {
         enabled = true;
